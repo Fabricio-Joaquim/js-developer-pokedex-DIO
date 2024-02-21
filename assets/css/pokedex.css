@@ -6,6 +6,15 @@
     list-style: none;
 }
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 .normal {
     background-color: #a6a877;
 }
@@ -84,6 +93,29 @@
     margin: .5rem;
     padding: 1rem;
     border-radius: 1rem;
+    animation: fadeIn 2s ease;
+}
+
+.material-symbols-outlined  {
+    font-size: 1rem !important;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    font-size: .625rem;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
+
+.container-skills{
+    padding-top: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
 }
 
 .pokemon .number {

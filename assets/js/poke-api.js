@@ -3,6 +3,11 @@ const pokeApi = {}
 
 function convertPokeApiDetailToPokemon(pokeDetail) {
     const pokemon = new Pokemon()
+
+    pokemon.hp = pokeDetail.stats[0].base_stat
+    pokemon.attack = pokeDetail.stats[1].base_stat
+    pokemon.defense = pokeDetail.stats[2].base_stat
+    pokemon.speed = pokeDetail.stats[5].base_stat
     pokemon.number = pokeDetail.id
     pokemon.name = pokeDetail.name
 
